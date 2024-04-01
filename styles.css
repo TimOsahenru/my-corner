@@ -5,10 +5,11 @@ body {
     box-sizing: border-box;
     background-color: #040200;
     color: white;
+    padding-bottom: 100px;
 }
 
 header {
-    background-color: #0E0C0A;
+    background-color: #0D0E0E;
     color: #fff;
     padding: 10px 20px;
     display: flex;
@@ -18,7 +19,7 @@ header {
 
 nav {
     margin-left: auto;
-    margin-right: 300px;
+    margin-right: 150px;
 }
 
 nav ul {
@@ -55,22 +56,69 @@ p {
     font-weight: bold;
     margin-right: auto;
     margin-left: 250px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
+.blog-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: #0D0E0E;
+    color: #CCCCCC;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .grid-item:hover {
+    background-color: #1A1B1B;
+  }
+
+  .grid-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .grid-item p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    /* color: #CCCCCC; */
+  }
+  
+  .time-created {
+    font-style: italic;
+    color: #fff;
+  }
+  
 footer {
-    background-color: #0E0C0A;
+    background-color: #0D0E0E;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer p a {
+  color:#CCCCCC;
 }
 
 /* Media query for smaller screens */
@@ -81,4 +129,11 @@ footer {
     nav {
         margin-right: 0; /* Remove the right margin on smaller screens */
     }
+    .grid-container {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+      }
+    
+      .grid-item {
+        margin-bottom: 20px; /* Add some space between cards */
+      }
 }
