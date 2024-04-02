@@ -14,7 +14,7 @@ header {
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap;
 }
 
 nav {
@@ -70,12 +70,15 @@ p {
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
+    position: relative;
   }
   
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    position: relative; /* this too */
+    margin-bottom: 50px; /* Add bottom margin to create space for pagination */
   }
   
   .grid-item {
@@ -106,6 +109,25 @@ p {
     font-style: italic;
     color: #fff;
   }
+
+  .pagination {
+    position: absolute;
+    bottom: -40px;
+    right: 20px;
+  }
+  
+  .pagination a {
+    color: white;
+    background-color: #0D0E0E;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    bottom: -40px;
+  }
+  
+  .pagination a:hover {
+    background-color: #1A1B1B;
+  }
   
 footer {
     background-color: #0D0E0E;
@@ -135,5 +157,10 @@ footer p a {
     
       .grid-item {
         margin-bottom: 20px; /* Add some space between cards */
+      }
+      .pagination {
+        position: absolute;
+        bottom: -20px; /* Adjust this value to add space between pagination and footer */
+        right: 20px;
       }
 }
