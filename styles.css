@@ -45,6 +45,12 @@ h1 {
     /* margin-right: auto; */
 }
 
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  /* margin-right: auto; */
+}
+
 p {
     font-size: 20px;
     /* font-weight: bold; */
@@ -126,6 +132,24 @@ p {
   }
   
   .pagination a:hover {
+    background-color: #1A1B1B;
+  }
+
+  .tags {
+    margin-top: 20px;
+  }
+  
+  .tag-button {
+    background-color: #0D0E0E;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tag-button:hover {
     background-color: #1A1B1B;
   }
   
