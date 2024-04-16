@@ -153,6 +153,55 @@ p {
     background-color: #1A1B1B;
   }
   
+  .contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 8px 20px;
+    background-color: #0D0E0E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #1A1B1B;
+  }
+
+  .contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #0D0E0E;
+  background-color: #0D0E0E;
+  color: #fff;
+  border-radius: 5px;
+}
+
 footer {
     background-color: #0D0E0E;
     color: #fff;
